@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto IMC</title>
+
+    <link rel="stylesheet" href="css/style.css">    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <div class="container">
+        <div class="content" id="calculadora">
+            <h1>Calculadora de IMC</h1>
+            <p>Preencha os dados para calcular</p>
+
+            <form autocomplete="off">
+                <input type="number" placeholder="Peso" id="peso">
+                <input type="number" placeholder="Altura" id="altura">
+                <button type="button" id="btn-imc">Calcular IMC</button>
+            </form>
+            
+        </div>
+
+        <!-- Área de resultado do IMC -->
+        <div class="content result d-none" id="result">
+            
+            <h1>Seu IMC é: <br> <span id="result-imc"></span> </h1>
+
+            <p>Sua classificação é: <strong id="result-classificacao"></strong> </p>
+
+            <button type="button" id="btn-refazer">Refazer teste</button>
+        </div>
+
+    </div>
+
+    <footer id="lgpd">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio eius ea doloribus non error voluptatem obcaecati nobis. Ipsam culpa accusantium nisi ducimus quae eius nemo porro placeat, ratione consectetur esse.</p>
+        <button id="btn-lgpd">Estou ciente</button>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
